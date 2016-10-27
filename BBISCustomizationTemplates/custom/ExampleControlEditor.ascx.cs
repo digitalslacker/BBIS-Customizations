@@ -22,7 +22,10 @@ namespace BBISCustomizationTemplates.custom
                 if (this.Content.GetContent(typeof(BlackbaudArguments)) != null)
                 {
                     var blackbaudArgs = this.Content.GetContent(typeof(BlackbaudArguments)) as BlackbaudArguments;
-                    if (blackbaudArgs != null) this.tbExampleProperty.Text = blackbaudArgs.ExampleProperty;
+                    if (blackbaudArgs != null)
+                    {
+                        this.tbExampleProperty.Text = blackbaudArgs.ExampleProperty;
+                    }
                 }
             }
         }
